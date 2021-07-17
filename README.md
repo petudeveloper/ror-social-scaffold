@@ -1,25 +1,16 @@
-# Scaffold for social media app with Ruby on Rails
+# Ruby on Rails Social Media App
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+In this project we are building a social media app which allows users to form friendships with one another, make posts, like posts, and comment on posts. So far, we have created an ERD of the project's database.
 
 ## Built With
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
-
-## Live Demo
-
-TBA
-
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
+- Ruby v2.7.4
+- Ruby on Rails v5.2.6
 
 ### Prerequisites
 
-Ruby: 2.6.3
-Rails: 5.2.3
+Ruby: 2.7.4
+Rails: 5.2.6
 Postgres: >=9.5
 
 ### Setup
@@ -36,16 +27,6 @@ Setup database with:
    rails db:create
    rails db:migrate
 ```
-
-### Github Actions
-
-To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
-
-1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
-2. Create the `feature/branch` and push.
-3. Start working on your milestone as usual.
-4. Open a PR from the `feature/branch` when your work is done.
-
 
 ### Usage
 
@@ -65,19 +46,21 @@ Open `http://localhost:3000/` in your browser.
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
 
-### Deployment
-
-TBA
-
 ## Authors
 
-TBA
+### David Alvarez
+- [GitHub](https://github.com/petumazo/)
+- [LinkedIn](https://www.linkedin.com/in/davidalvarezmazzo/)
+
+### Yuvraj Manoo
+- [GitHub](https://github.com/YuvrajM108/)
+- [LinkedIn](https://www.linkedin.com/in/yuvraj-manoo/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/petumazo/ror-social-scaffold/issues).
 
 ## Show your support
 
@@ -85,9 +68,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+Forked and expanded from [microverse repository](https://github.com/microverseinc/ror-social-scaffold)
 
 ## 📝 License
 
-TBA
+- [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
 
