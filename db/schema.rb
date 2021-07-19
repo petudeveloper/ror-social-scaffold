@@ -35,16 +35,6 @@ ActiveRecord::Schema.define(version: 2021_07_17_230130) do
     t.index ["user_id"], name: "index_friendships_on_user_id"
   end
 
-  create_table "invitations", force: :cascade do |t|
-    t.bigint "user_id"
-    t.integer "friend_id"
-    t.boolean "confirmed", default: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "inviter_id", null: false
-    t.index ["user_id"], name: "index_invitations_on_user_id"
-  end
-
   create_table "likes", force: :cascade do |t|
     t.integer "post_id"
     t.integer "user_id"
@@ -76,5 +66,4 @@ ActiveRecord::Schema.define(version: 2021_07_17_230130) do
 
   add_foreign_key "friendships", "users"
   add_foreign_key "friendships", "users", column: "friend_id"
-  add_foreign_key "invitations", "users"
 end
