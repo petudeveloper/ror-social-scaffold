@@ -1,7 +1,7 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
-  <% if !(current_user.friend? @user) %>
-    <%= button_to "Invite to friendship", friendships_path(invited_user_id: @user.id) %>
+  <% if (current_user.friend_requests.include?(@user)) %>
+    <%= button_to "Invite to friendship", friendships_path(invited_user_id: @user.id), class: 'w-auto' %>
   <% end %>
   <article class="timeline">
     <h3>Recent posts:</h3>
