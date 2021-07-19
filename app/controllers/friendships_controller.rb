@@ -21,7 +21,9 @@ class FriendshipsController < ApplicationController
     
 
     def destroy
-        
+        inviter_user = User.find(params[:id])
+        current_user.reject_friendship inviter_user
+        redirect_to current_user, notice: 'Invitation successfully rejected.'
     end
     
 end
