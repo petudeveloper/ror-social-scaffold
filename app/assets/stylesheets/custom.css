@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
@@ -34,8 +35,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 16px 48px;
   background-color: #689f38;
   color: #dcedc8;
@@ -58,8 +59,8 @@ a {
 .nav .menu {
   width: 80%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .nav .menu .menu-item {
@@ -73,11 +74,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 16px;
 }
 
@@ -112,11 +113,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -189,8 +190,8 @@ form .actions {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 8px 0;
 }
 
@@ -228,11 +229,11 @@ form .actions.reset input[type="submit"] {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .timeline h3 {
@@ -251,8 +252,8 @@ form .actions.reset input[type="submit"] {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .timeline .post-attribution {
@@ -342,8 +343,8 @@ form .actions.reset input[type="submit"] {
 .user-section .timeline {
   width: 100%;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 .user-section .timeline h3 {
@@ -363,6 +364,7 @@ form .actions.reset input[type="submit"] {
   form {
     width: 60%;
   }
+
   .new_post,
   .timeline,
   .users-section,
@@ -375,6 +377,7 @@ form .actions.reset input[type="submit"] {
   form {
     width: 40%;
   }
+
   .new_post,
   .timeline,
   .users-section,
@@ -382,4 +385,3 @@ form .actions.reset input[type="submit"] {
     width: 50%;
   }
 }
-/*# sourceMappingURL=custom.css.map */
