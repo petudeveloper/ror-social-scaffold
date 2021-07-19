@@ -6,7 +6,7 @@
     </span>
   </div>
   <div>
-    <% if (current_user.friend_requests.include?(@user)) %>
+    <% if (current_user.friend_requests.include?(user)) %>
       <%= button_to "Invite to friendship", friendships_path(invited_user_id: user.id), class: 'w-auto mx-2' %>
     <% end %>
   </div>
