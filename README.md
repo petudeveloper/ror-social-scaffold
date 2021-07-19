@@ -2,10 +2,10 @@
 
 In this project we are built a social media app which allows users to form friendships with one another, make posts, like posts, and comment on posts. In order to accomplish this, we used the features of ActiveRecord in Ruby on Rails.
 
-[Sign In Form](./docs/app-screenshot-1.png)
-[Timeline](./docs/app-screenshot-2.png)
-[Users Page](./docs/app-screenshot-3.png)
-[Friendship Invitations](./docs/app-screenshot-4.png)
+![Sign In Form](./docs/app-screenshot-1.png)
+![Timeline](./docs/app-screenshot-2.png)
+![Users Page](./docs/app-screenshot-3.png)
+![Friendship Invitations](./docs/app-screenshot-4.png)
 
 ## Built With
 
