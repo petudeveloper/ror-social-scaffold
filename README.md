@@ -1,11 +1,24 @@
 # Ruby on Rails Social Media App
 
-In this project we are building a social media app which allows users to form friendships with one another, make posts, like posts, and comment on posts. So far, we have created an ERD of the project's database.
+In this project we are built a social media app which allows users to form friendships with one another, make posts, like posts, and comment on posts. In order to accomplish this, we used the features of ActiveRecord in Ruby on Rails.
+
+[Sign In Form](./docs/app-screenshot-1.png)
+[Timeline](./docs/app-screenshot-2.png)
+[Users Page](./docs/app-screenshot-3.png)
+[Friendship Invitations](./docs/app-screenshot-4.png)
 
 ## Built With
 
 - Ruby v2.7.4
 - Ruby on Rails v5.2.6
+
+## Getting Started
+
+In order get a copy of this project on your local machine please follow the following steps:
+
+- Navigate to a file directory in your computer where you wish to store this project.
+
+- Clone the files to that directory by opening your Git terminal in the directory, copying the URL of this project, and entering the ```git clone``` command followed by the URL of this project. ```git clone git@github.com:YuvrajM108/members-only.git```.
 
 ### Prerequisites
 
