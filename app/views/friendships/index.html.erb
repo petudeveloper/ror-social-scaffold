@@ -6,7 +6,8 @@
                     <%= friend_request_user.name %>
                 </div>
                 <div>
-                    <%= button_to "Accept friendship", friendship_path(friend_request_user.id) , :method => :patch, class: 'w-auto mx-2' %>
+                    <%= button_to "Accept friendship", friendship_path(friend_request_user.id), :method => :patch, class: 'w-auto mx-2' %>
+                    <%= button_to "Reject friendship", friendship_path(friend_request_user.id), :method => :delete, class: 'w-auto mx-2' %>
                 </div>
             </li>
         <% end %>
