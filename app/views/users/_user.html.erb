@@ -8,6 +8,9 @@
   <div>
     <% if (!(current_user.friend? user) && !(current_user.pending_friends.include?(user))) %>
       <%= button_to "Invite to friendship", friendships_path(invited_user_id: user.id), class: 'w-auto mx-2' %>
+    <% elsif (current_user.pending_friends.include?(user)) %>
+      <%= button_to "Accept friendship", friendship_path(friend_request_user.id), :method => :patch, class: 'w-auto mx-2' %>
+      <%= button_to "Reject friendship", friendship_path(friend_request_user.id), :method => :delete, class: 'w-auto mx-2' %>
     <% end %>
   </div>
 </li>
