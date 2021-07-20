@@ -51,7 +51,6 @@ group :development, :test do
 end
 
 group :test do
-
 end
 
 group :development do
