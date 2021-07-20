@@ -4,7 +4,11 @@ class FriendshipsController < ApplicationController
   def create
     user = User.find(params[:invited_user_id])
     friendship = Friendship.create(user_id: current_user.id, friend_id: params[:invited_user_id], confirmed: false)
-    redirect_to user, notice: 'Your friendship invitation was successfully sent.' if friendship.save
+    if friendship.save
+      redirect_to user, notice: 'Your friendship invitation was successfully sent.' 
+    else
+      render
+    end
   end
 
   # Accept friendship
