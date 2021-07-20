@@ -19,7 +19,6 @@ RSpec.describe Post, type: :model do
       user = User.find_by(name: 'User1')
       expect(user.class).to be(User)
       post = user.posts.create(content: 'A simple post')
-      user.liked_posts << post
       expect(post.likes.count).to eq(1)
     end
   end

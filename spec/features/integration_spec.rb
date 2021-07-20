@@ -112,7 +112,7 @@ RSpec.describe 'Feature test' do
       login_process(user_number: 3)
       visit '/users'
       click_link 'User3'
-      click_button 'ACCEPT FRIENDSHIP'
+      click_button 'Accept friendship'
       expect(page).to have_content 'Your friendship invitation was accepted.'
     end
 
@@ -120,7 +120,7 @@ RSpec.describe 'Feature test' do
       login_process(user_number: 3)
       visit '/users'
       click_link 'User3'
-      click_link 'REJECT FRIENDSHIP'
+      click_button 'Reject friendship'
       expect(page).to have_content 'Invitation successfully rejected.'
     end
   end
