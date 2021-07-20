@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
@@ -31,11 +32,10 @@ a {
 
 .nav {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 16px 48px;
   background-color: #689f38;
   color: #dcedc8;
@@ -58,8 +58,8 @@ a {
 .nav .menu {
   width: 80%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .nav .menu .menu-item {
@@ -69,15 +69,14 @@ a {
 
 .main {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 16px;
 }
 
@@ -108,15 +107,14 @@ a {
 .new_post,
 .new_comment {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -179,18 +177,15 @@ form .field input {
 }
 
 form .field input[type="checkbox"] {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
 form .actions {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 8px 0;
 }
 
@@ -224,15 +219,14 @@ form .actions.reset input[type="submit"] {
   width: 100%;
   margin: 16px 0;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .timeline h3 {
@@ -247,12 +241,11 @@ form .actions.reset input[type="submit"] {
   width: 100%;
   margin: 16px 0;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .timeline .post-attribution {
@@ -293,8 +286,6 @@ form .actions.reset input[type="submit"] {
 
 .timeline .post-comments-section .post-comments {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #bdbdbd;
   border-radius: 3px;
@@ -342,8 +333,8 @@ form .actions.reset input[type="submit"] {
 .user-section .timeline {
   width: 100%;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 .user-section .timeline h3 {
@@ -363,6 +354,7 @@ form .actions.reset input[type="submit"] {
   form {
     width: 60%;
   }
+
   .new_post,
   .timeline,
   .users-section,
@@ -375,6 +367,7 @@ form .actions.reset input[type="submit"] {
   form {
     width: 40%;
   }
+
   .new_post,
   .timeline,
   .users-section,
@@ -382,4 +375,3 @@ form .actions.reset input[type="submit"] {
     width: 50%;
   }
 }
-/*# sourceMappingURL=custom.css.map */

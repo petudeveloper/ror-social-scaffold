@@ -1,5 +1,7 @@
 <section class="users-section">
   <ul class="users-list">
-    <%= render @users %>
+    <% @users.each do |user| %>
+      <%= render user unless current_user.id == user.id %>
+    <% end %>
   </ul>
 </section>
