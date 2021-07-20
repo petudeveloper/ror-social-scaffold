@@ -77,20 +77,6 @@ RSpec.describe 'Feature test' do
 
   describe 'save post', type: :feature do
     it 'creates a post' do
-      visit 'users/sign_in'
-      within('#new_user') do
-        fill_in 'Email', with: 'user1@email.com'
-        fill_in 'Password', with: '123456'
-      end
-      click_button 'Log in'
-      within('#new_post') do
-        fill_in 'post_content', with: 'hello world'
-        click_button 'Save'
-      end
-      expect(page).to have_content 'Post was successfully created'
-    end
-
-    it 'creates a post' do
       login_process
       within('#new_post') do
         fill_in 'post_content', with: ''
@@ -104,22 +90,20 @@ RSpec.describe 'Feature test' do
     it 'sends an invitation to an unrelated user' do
       login_process
       visit '/users'
-      click_button('INVITE TO FREINDSHIP')
+      click_button('Invite to friendship')
       expect(page).to have_content 'Your friendship invitation was successfully sent.'
     end
 
     it 'can confirm received invitation' do
       login_process(user_number: 3)
-      visit '/users'
-      click_link 'User3'
+      visit '/friendships'
       click_button 'Accept friendship'
       expect(page).to have_content 'Your friendship invitation was accepted.'
     end
 
     it 'can reject received invitation' do
       login_process(user_number: 3)
-      visit '/users'
-      click_link 'User3'
+      visit 'friendships'
       click_button 'Reject friendship'
       expect(page).to have_content 'Invitation successfully rejected.'
     end
