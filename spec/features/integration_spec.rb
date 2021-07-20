@@ -15,7 +15,7 @@ RSpec.describe 'Feature test' do
       inviter_id: inviter.id
     )
   end
-  
+
   before :each do
     users = []
     4.times do |n|
@@ -23,7 +23,7 @@ RSpec.describe 'Feature test' do
                          email: "user#{n + 1}@example.com",
                          password: '123456',
                          password_confirmation: '123456')
-      users[n+1] = user
+      users[n + 1] = user
     end
     users[1].posts.create(content: 'Hello world')
     create_invitation_pair(users[1], users[3], false)
