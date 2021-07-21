@@ -10,7 +10,7 @@ class FriendshipsController < ApplicationController
   # Accept friendship
   def update
     inviter_user = User.find(params[:id])
-    current_user.confirm_friend inviter_user
+    Friendship.create!(friend_id: inviter_user.id, user_id: current_user.id, confirmed: true)
     return unless current_user.friends.include? inviter_user
 
     redirect_to inviter_user, notice: 'Your friendship invitation was accepted.'
