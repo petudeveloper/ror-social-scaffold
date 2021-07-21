@@ -1,6 +1,4 @@
 class FriendshipsController < ApplicationController
-  def index; end
-
   def create
     user = User.find(params[:invited_user_id])
     friendship = Friendship.create(user_id: current_user.id, friend_id: params[:invited_user_id], confirmed: false)
