@@ -6,9 +6,9 @@
     </span>
   </div>
   <div>
-    <% if (!user.pending_friends.include?(current_user)) && (!current_user.pending_friends.include?(user) && !(current_user.friend? user))%>
+    <% if (!user.pending_friends.include?(current_user)) && (!current_user.pending_friends.include?(user) && (!current_user.friend? user))%>
       <%= button_to "Invite to friendship", friendships_path(invited_user_id: user.id), class: 'w-auto mx-2' %>
-    <% elsif (user.pending_friends.include?(current_user)) %>
+    <% elsif (user.pending_friends.include?(current_user) && (!current_user.friend? user)) %>
       <%= button_to "Accept friendship", friendship_path(user.id), :method => :patch, class: 'w-auto mx-2' %>
       <%= button_to "Reject friendship", friendship_path(user.id), :method => :delete, class: 'w-auto mx-2' %>
     <% end %>
