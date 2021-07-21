@@ -1,8 +1,13 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
-  <% if (current_user.friend_requests.include?(@user)) %>
-    <%= button_to "Invite to friendship", friendships_path(invited_user_id: @user.id), class: 'w-auto' %>
-  <% end %>
+  <div>
+    <% if (!@user.pending_friends.include?(current_user)) && (!current_user.pending_friends.include?(@user) && !(current_user.friend? @user))%>
+      <%= button_to "Invite to friendship", friendships_path(invited_user_id: @user.id), class: 'w-auto mx-2' %>
+    <% elsif (@user.pending_friends.include?(current_user)) %>
+      <%= button_to "Accept friendship", friendship_path(@user.id), :method => :patch, class: 'w-auto mx-2' %>
+      <%= button_to "Reject friendship", friendship_path(@user.id), :method => :delete, class: 'w-auto mx-2' %>
+    <% end %>
+  </div>
   <article class="timeline">
     <h3>Recent posts:</h3>
     <ul class="posts">
