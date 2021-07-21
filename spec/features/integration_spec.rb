@@ -1,7 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe 'Feature test' do
-  # Populate the database
+  def create_invitation_pair(inviter, invitee, confirmed)
+    Friendship.create(
+      user_id: inviter.id,
+      friend_id: invitee.id,
+      confirmed: confirmed
+    )
+    Friendship.create(
+      user_id: invitee.id,
+      friend_id: inviter.id,
+      confirmed: confirmed
+    )
+  end
+
   before :each do
     users = []
     4.times do |n|
@@ -9,13 +21,11 @@ RSpec.describe 'Feature test' do
                          email: "user#{n + 1}@example.com",
                          password: '123456',
                          password_confirmation: '123456')
-      users[n] = user
+      users[n + 1] = user
     end
-    users[0].posts.create(content: 'Hello world')
-    users[0].friendships.create(friend_id: users[3].id,
-                                confirmed: true)
-    users[0].friendships.create(friend_id: users[2].id,
-                                confirmed: false)
+    users[1].posts.create(content: 'Hello world')
+    create_invitation_pair(users[1], users[3], false)
+    create_invitation_pair(users[1], users[4], true)
   end
 
   def login_process(user_number: 1)

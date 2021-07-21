@@ -37,7 +37,7 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 16px 48px;
-  background-color: #689f38;
+  background-color: #38429f;
   color: #dcedc8;
 }
 
@@ -194,14 +194,14 @@ form input[type="submit"] {
   width: 50%;
   border: none;
   border-radius: 4px;
-  background-color: #689f38;
+  background-color: #38429f;
   color: #dcedc8;
   text-transform: uppercase;
   font-weight: 900;
 }
 
 form input[type="submit"]:hover {
-  background-color: #8bc34a;
+  background-color: #4a89c3;
   color: #fff;
 }
 
@@ -254,7 +254,7 @@ form .actions.reset input[type="submit"] {
 
 .timeline .post-attribution .post-author {
   margin: 0 0 8px 0;
-  color: #689f38;
+  color: #38429f;
   text-transform: capitalize;
 }
 
@@ -263,7 +263,7 @@ form .actions.reset input[type="submit"] {
 }
 
 .timeline .post-liking a {
-  color: #689f38;
+  color: #38429f;
   font-weight: bold;
   font-size: 0.9em;
   margin: 0 4px;
@@ -318,7 +318,7 @@ form .actions.reset input[type="submit"] {
 .users-section .profile-link {
   font-size: 0.8em;
   margin: 0 0 8px 0;
-  color: #689f38;
+  color: #38429f;
 }
 
 .user-section {

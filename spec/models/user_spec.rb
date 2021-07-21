@@ -8,6 +8,19 @@ RSpec.describe User, type: :model do
     end
   end
 
+  def create_invitation_pair(inviter, invitee, confirmed)
+    Friendship.create(
+      user_id: inviter.id,
+      friend_id: invitee.id,
+      confirmed: confirmed
+    )
+    Friendship.create(
+      user_id: invitee.id,
+      friend_id: inviter.id,
+      confirmed: confirmed
+    )
+  end
+
   describe 'Test associations' do
     before(:each) do
       users = []
@@ -19,11 +32,7 @@ RSpec.describe User, type: :model do
         users[n] = user
       end
       (1..4).each do |n|
-        Friendship.create(
-          user_id: users[0].id,
-          friend_id: users[n].id,
-          confirmed: n.even?
-        )
+        create_invitation_pair(users[0], users[n], n.even?)
       end
     end
 
