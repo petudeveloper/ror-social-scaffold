@@ -5,14 +5,12 @@ RSpec.describe 'Feature test' do
     Friendship.create(
       user_id: inviter.id,
       friend_id: invitee.id,
-      confirmed: confirmed,
-      inviter_id: inviter.id
+      confirmed: confirmed
     )
     Friendship.create(
       user_id: invitee.id,
       friend_id: inviter.id,
-      confirmed: confirmed,
-      inviter_id: inviter.id
+      confirmed: confirmed
     )
   end
 
