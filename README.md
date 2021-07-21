@@ -7,6 +7,10 @@ In this project we are built a social media app which allows users to form frien
 ![Users Page](./docs/app-screenshot-3.png)
 ![Friendship Invitations](./docs/app-screenshot-4.png)
 
+## Live Demo
+
+To see a live demo of the project, please click the following [link](https://pacific-badlands-74772.herokuapp.com/)
+
 ## Built With
 
 - Ruby v2.7.4
